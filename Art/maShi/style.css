@@ -1,0 +1,35 @@
+div#one {
+	height: 100px;
+	width: 100%;
+	background: repeating-linear-gradient(white, skyblue 10%, black 20%);
+}
+
+div#two {
+	height: 100px;
+	width: 100%;
+	background: repeating-linear-gradient(black, skyblue 10%, white 20%);
+}
+
+div#three {
+	height: 100px;
+	width: 100%;
+	background: repeating-linear-gradient(skyblue, white 10%, black 20%);
+}
+
+.animacija {
+    width:200px;
+    height: 200px;
+    background: red;
+    -webkit-animation: fadeinout 4s linear forwards infinite;
+    animation: fadeinout 4s linear forwards infinite;
+}
+
+@-webkit-keyframes fadeinout {
+  0%,100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+@keyframes fadeinout {
+  0%,100% { opacity: 0; }
+  50% { opacity: 1; }
+}
